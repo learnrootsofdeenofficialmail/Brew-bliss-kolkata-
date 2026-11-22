@@ -1,0 +1,20 @@
+/* Styles added for the cart, forms and the mobile header. Loaded by App.tsx. */
+.cart-btn{display:inline-flex;align-items:center;gap:7px}
+.cart-btn svg{color:var(--gold)}
+.nav .nav-reserve{display:none;background:none;border:0;padding:0;color:var(--gold2);font-size:13px}
+.reserve:disabled,.reserve:disabled:hover{opacity:.6;cursor:wait;transform:none;filter:none}
+.form-error{margin:0;padding:10px 12px;border-radius:6px;background:rgba(190,60,50,.16);color:#f3b8ad;font-size:11px}
+.form-alt{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-size:11px;color:var(--gold2)}
+.hp-field{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.order-lines{list-style:none;margin:0 0 14px;padding:0;max-height:260px;overflow:auto}
+.order-line{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 0;border-bottom:1px solid var(--line)}
+.order-name{display:block;font:15px 'Playfair Display';font-weight:500}
+.order-meta{display:block;font-size:10px;color:var(--muted);margin-top:3px}
+.order-sub{font-size:13px;color:var(--gold2);white-space:nowrap}
+.qty{display:inline-flex;align-items:center;gap:9px;border:1px solid var(--line);border-radius:20px;padding:3px 5px}
+.qty button{width:26px;height:26px;border-radius:50%;border:0;background:#211c17;color:var(--gold2);display:grid;place-items:center}
+.qty span{min-width:16px;text-align:center;font-size:12px}
+.order-total{display:flex;justify-content:space-between;align-items:baseline;margin:2px 0 16px;font-size:12px;color:var(--muted)}
+.order-total b{font:22px 'Playfair Display';color:var(--gold2)}
+@media (max-width:900px){.nav-actions .cart-btn{display:inline-flex}.nav-actions .cart-label{display:none}}
+@media (max-width:680px){.nav .nav-reserve{display:inline-flex}.nav-actions .reserve.small{display:none}}
